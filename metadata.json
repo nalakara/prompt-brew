@@ -1,0 +1,9 @@
+{
+  "name": "Prompt Brew",
+  "description": "An advanced tool to generate, refine, and manage prompts for a wide range of AI models, including text, image, music, and code generation.",
+  "requestFramePermissions": [],
+  "prompt": "",
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
