@@ -1,20 +1,35 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Prompt Brew
 
-# Run and deploy your AI Studio app
+> Peracik dan pemoles prompt AI multibahasa (Indonesia/English) — susun prompt terstruktur untuk teks, gambar, musik, kode, dan video, lalu poles hasilnya dengan Gemini.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/9ae7a723-7c63-451a-a96c-4a5bc8d4788f
+## Fitur Utama
 
-## Run Locally
+- **Kategori prompt** — teks, gambar, musik, kode, video, dan custom.
+- **Refine dengan AI** — poles draf prompt-mu via Gemini (API key aman di sisi server, tidak terekspos ke browser).
+- **Live preview** — lihat hasil prompt jadi secara real-time selagi menyusun.
+- **Profil personalisasi** — simpan konteks/persona-mu untuk dipakai ulang di semua prompt.
 
-**Prerequisites:**  Node.js
+## Cara Menjalankan
 
+```bash
+npm install
+cp .env.example .env   # isi GEMINI_API_KEY
+npm run dev
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Buka `http://localhost:3000` (atau port yang tertera di terminal).
+
+## Tech Stack
+
+- **Frontend**: React 19 + TypeScript + Vite
+- **Backend**: Express 5 (`server.ts`, juga membundel untuk production)
+- **AI**: Google Gemini SDK (`@google/genai`) — API key di sisi server
+- **Styling**: Tailwind CSS
+
+---
+
+## License
+
+MIT License © 2026 Yudhan Sebastian
